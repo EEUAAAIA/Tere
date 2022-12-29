@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"> 
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/gilroy-bold');    
+    </style>
+    <script src="js/script.js"> </script>
+    <title>Tere 2.0</title>
+</head>
+<body onresize="WindowSize1()">
+
+<!--Maquette implémentée : https://www.figma.com/file/BHhAkx4ewT9NgTUv5HY5uS/Ride-sharing-web-ui---bootstrap-guide-lines-(Community)?node-id=36%3A54643&t=ZIbezm69IViusThD-0-->
+
+<!----------------HEADER------------------>
+    <header>
+        <section class="navbar">
+            <!--Menu normal-->
+            <section>
+                <img class="logo" src ="img/logo.png">
+            </section>
+            <section>
+                <nav class="menu-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">How tere work</a></li>
+                        <li><a href="#">Tere benefits</a></li>
+                        <li><a href="#"><button class="help_center">Help Center</button></a></li>
+                    </ul>
+                </nav>
+            </section>
+            <!--Fin Menu normal-->
+            <!--Logo Ouverture/Fermeture Burger-->
+            <section class="burger-menu">
+                <button class="burger-button" onclick="showMenuBurger()">
+                    <img src="img/icons8-menu-50.png" alt="">
+                </button>
+                <button class="burger-close" onclick="closeMenuBurger()">
+                    <img src="img/close.png" alt="">
+                </button>
+            </section>
+        </section>
+
+        <!--Contenu Menu Burger-->
+        <section>
+            <ul class="burger-content">
+                <li><a href="">Home</a></li>
+                <li><a href="">How tere work</a></li>
+                <li><a href="">Tere benefits</a></li>
+                <li><a href=""><button class="help_center">Help Center</button></a></li>
+            </ul>
+        </section>
+        <!--Fin Contenu Menu Burger-->
+
+    </header>
+<!----------------FIN HEADER------------------>
+
+<!----------------MAIN------------------>
+    <main>
+        <!--PREMIERE PARTIE-->
+            <section class="first_part">
+                <section class="first_part_parag">
+                    <h2>
+                        DOWNLOAD APP, SAVE MONEY, MAKE FRIENDS!
+                    </h2>
+                    <p>
+                        Its simple and its free. Play your part in reducing Carbon Footprint and help Mother Nature to sustain its beauty.So what are you waiting for? Lets ride together
+                    </p>
+                    <section class ="button">
+                        <button class="b_store"> <img src="img/play_store.png">DOWNLOAD</button>
+                        <button class="b_store"> <img src="img/app_store.png">DOWNLOAD</button>
+                    </section>
+                </section>
+                    
+                <section class="img_map">
+                    <img src="img/cart.png">
+                </section>
+            </section>
+        <!--FIN PREMIERE PARTIE-->
+
+        <!--SECONDE PARTIE-->
+            <section class="second_part">
+                <section class="second_part_parag">
+                    <p>
+                        Let's go. Get a link to download the app.
+                    </p>
+                    <article>
+                        <input type="text" value="Enter mobile phone number">
+                    </article>
+                    <article>
+                        <button>APPLY TO DRIVE</button>
+                    </article>
+                </section>
+            </section>
+        <!--FIN DE SECONDE PARTIE-->
+
+        <!--TROISIEME PARTIE-->
+            <section class="third_part">
+                    <h3>HOW <span>TERE</span> WORKS</h3>
+                    <p>Download and install the tere app. Enter your phone make your user account. When approved you may start driving. </p>
+            </section>
+        <!--FIN DE TROISIEME PARTIE-->
+
+        <!--QUATRIEME PARTIE-->
+            <br/>
+            <br/>
+            <section class="fourth_part1">
+                <ol>
+                    <section class="fourth_part_img1">
+                        <img src="img/phone.png">
+                    </section>
+                        
+                    <section>
+
+                        <section class="testpara">
+                            <section class="reverse">
+                                <li><article class="number reverse">1</article>
+                                    <p>
+                                        <article class="titre_p">REQUEST A RIDE</article>
+                                        Have to reach office or going for shopping ? Just put your current location and destination and search a ride that suits you
+                                    </p>
+                                </li>
+                            </section>
+
+                            <article class="space"></article>
+
+                            <section class ="test2">
+                                <li><article class="number test2">2</article>
+                                    <p>
+                                        <article class="titre_p">POST A RIDE</article>
+
+                                        Get instant notification for your rides and be in contact with fellow riders all the time
+                                    </p>
+                                </li>
+                            </section>
+                        </section>
+                        
+                        <section class="testpara1">
+                            <section class="reverse">
+                                <li><article class="number reverse">3</article>
+                                    <p> 
+                                        <article class="titre_p">INSTANT NOTIFICATIONS</article>
+
+                                        Have to reach office or going for shopping ? Just put your current location and destination and search a ride that suits you
+                                    </p>
+                                </li>
+                            </section>
+
+                            <article class="space"></article>
+
+                            <section class="test2">
+                                <li><article class="number test2">4</article>
+                                    <p>
+                                        <article class="titre_p">CASHLESS PAYMENT</article>
+
+                                        Payment made easy by using your own Wallet - no more xash to carry
+                                    </p>
+                                </li>
+                            </section>
+                        </section>
+                    
+                    </section>
+                    
+                </ol>
+            </section>    
+        <!--FIN DE QUATRIEME PARTIE-->
+
+        <!---CINQUIEME PARIE--->
+            <section class ="fifth_part">
+                <h3><span>TERE</span> BENEFITS</h3>
+                    <section>
+                        <section class="fifth_part_section">
+                            <section class="fifth_part_text">
+                                <span>01.</span> <b>Flexible working hours </b>
+                                <p>
+                                    You can decide when, and how much time you want to drive.
+                                </p>
+                            </section>
+                
+                            <section>
+                                <img src="img/img1.png">
+                            </section>
+                        </section>
+
+                        <br/>
+
+                        <section class="fifth_part_section_reverse">
+                            <section class="fifth_part_text">
+                                <span>02.</span> <b>Earings</b>
+                                <p>
+                                    By driving with tere you can earn more.
+                                </p>
+                            </section>
+                            <section>
+                                <img src="img/img2.png">
+                            </section>
+                        </section>
+
+                        <br/>
+
+                        <section class="fifth_part_section">
+                            <section class="fifth_part_text">
+                                <span>03.</span> <b>Customer support 24/7</b>
+                                <p>
+                                    Tere is a local service provider and we are proud to support you in your local language. We are proud to be at your service 24/7!
+                                </p>
+                            </section>
+                            <section>
+                                <img src="img/img3.png">
+                            </section>
+                        </section>
+
+
+                        <br/>
+
+                    </section>
+                </section>
+            </section>
+        <!--FIN CINQUIEME PARTIE-->
+    
+    </main>
+<!----------------FIN MAIN------------------>
+
+
+<!----------------FOOTER------------------>
+    <footer>
+        <section class="logo_footer">
+            <img src="img/logo_footer.png">
+        </section>
+            <section class="address1">
+                <p>
+                    Be Our Friend
+                </p>
+                <p>
+                    3, Season Park, Jakarta
+                </p>
+                <p>
+                    support@foodyar.co.id
+                </p>
+                <p>
+                    021 - 1111 - 2222
+                </p>
+            </section>
+            <section class ="address2">
+                <p>
+                    Be Our Friend
+                </p>
+                <p>
+                    3, Season Park, Jakarta
+                </p>
+                <p>
+                    support@foodyar.co.id
+                </p>
+                <p>
+                    021 - 1111 - 2222
+                </p>
+            </section>
+            <section class="footer_button">
+                <button class="b_store"> <img src="img/play_store.png">DOWNLOAD</button>
+                <button class="b_store"> <img src="img/app_store.png">DOWNLOAD</button>
+            </section>
+    </footer>
+<!----------------FIN FOOTER------------------>
+
+    
+</body>
+</html>
